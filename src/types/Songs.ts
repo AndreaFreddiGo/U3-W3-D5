@@ -68,3 +68,5 @@ export enum TitleVersion {
 export enum WelcomeType {
   Track = 'track',
 }
+
+export default ISongs

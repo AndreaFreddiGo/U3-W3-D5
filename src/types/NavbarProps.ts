@@ -3,3 +3,5 @@ export interface AppleNavbarProps {
   setQuery: React.Dispatch<React.SetStateAction<string>>
   onSubmit: (e: React.FormEvent<HTMLFormElement>) => Promise<void>
 }
+
+export default AppleNavbarProps
