@@ -1,4 +1,4 @@
-import { Container, Row } from 'react-bootstrap'
+import { Row } from 'react-bootstrap'
 import ExploreCard from './ExploreCard'
 import ApplePlayer from './ApplePlayer'
 import QueryCard from './QueryCard'
@@ -10,33 +10,31 @@ interface AppleMainProps {
 
 const AppleMain = (props: AppleMainProps) => {
   return (
-    <Container className="m-0 p-0">
-      <Row className="d-flex flex-column">
-        <div className="d-flex">
-          <ApplePlayer />
+    <Row className="d-flex flex-column mx-0 px-0">
+      <div className="d-flex px-0">
+        <ApplePlayer />
+      </div>
+      <div className="d-flex px-0">
+        <h1 className="text-light">Novità</h1>
+      </div>
+      <div className="d-flex px-0">
+        <h1 className="text-light">Nuovi episodi radio</h1>
+      </div>
+      <div className="px-0">
+        <h1 className="text-light">Nuove uscite</h1>
+        <div className="d-flex flex-wrap justify-content-evenly">
+          {props.songs.map((s) => {
+            return <QueryCard song={s} />
+          })}
         </div>
-        <div className="d-flex">
-          <h1 className="text-light">Novità</h1>
+      </div>
+      <div className="px-0">
+        <h1 className="text-light">Altro da esplorare</h1>
+        <div className="d-flex flex-column flex-md-row flex-wrap justify-content-evenly">
+          <ExploreCard />
         </div>
-        <div className="d-flex">
-          <h1 className="text-light">Nuovi episodi radio</h1>
-        </div>
-        <div>
-          <h1 className="text-light">Nuove uscite</h1>
-          <div className="d-flex flex-wrap justify-content-evenly">
-            {props.songs.map((s) => {
-              return <QueryCard song={s} />
-            })}
-          </div>
-        </div>
-        <div>
-          <h1 className="text-light">Altro da esplorare</h1>
-          <div className="d-flex">
-            <ExploreCard />
-          </div>
-        </div>
-      </Row>
-    </Container>
+      </div>
+    </Row>
   )
 }
 

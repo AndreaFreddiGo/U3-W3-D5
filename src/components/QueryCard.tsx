@@ -8,7 +8,7 @@ interface QueryCardProps {
 const QueryCard = (props: QueryCardProps) => {
   return (
     <>
-      <Col className="col-3 col-md-2 bg-secondary rounded-2 m-2 bg-transparent">
+      <Col className="col-3 col-md-2 bg-secondary rounded-2 m-3 bg-transparent">
         <Card className="bg-transparent text-light border-0">
           <Card.Img variant="top" src={props.song.album.cover_xl} />
           <Card.Body>

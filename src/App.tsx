@@ -5,6 +5,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 import AppleMain from './components/AppleMain'
 import { useState } from 'react'
 import ISongs from './types/Songs'
+import 'bootstrap-icons/font/bootstrap-icons.css'
 
 function App() {
   const [query, setQuery] = useState('')
@@ -28,14 +29,14 @@ function App() {
   return (
     <Container fluid>
       <Row className="d-flex flex-column flex-md-row">
-        <Col className="col-12 col-md-2 d-flex justify-content-start flex-column bg-secondary">
+        <Col className="col-12 col-md-2 d-flex justify-content-start flex-column bg-secondary m-0 p-0 border-1 border-end border-secondary">
           <AppleNavbar
             onSubmit={handleSubmit}
             query={query}
             setQuery={setQuery}
           />
         </Col>
-        <Col className="col-12 col-md-10 d-flex justify-content-start flex-column bg-dark px-0">
+        <Col className="col-12 col-md-10 m-0 p-0">
           <AppleMain songs={arrayOfSongs} />
         </Col>
       </Row>
