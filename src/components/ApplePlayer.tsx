@@ -19,7 +19,8 @@ const ApplePlayer = () => {
               style={{ filter: 'invert(1)' }}
             />
           </div>
-          <i className="bi bi-person-fill btn btn-danger fst-normal px-3 py-0 rounded-1 my-2 ms-3">
+          <i className="bi bi-person-fill btn btn-danger fst-normal px-3 py-0  rounded-1 my-2 ms-3 fs-6">
+            {'  '}
             Accedi
           </i>
         </div>

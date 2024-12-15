@@ -6,6 +6,9 @@
   .navbar {
     height: 100vh;
   }
+  #musicLogo {
+    width: 80px !important;
+  }
 }
 
 #appleLogo {
@@ -13,5 +16,9 @@
 }
 
 #musicLogo {
-  width: 80px;
+  width: 60px;
+}
+
+.footer {
+  font-size: x-small;
 }

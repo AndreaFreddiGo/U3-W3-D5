@@ -6,16 +6,17 @@ const AppleNavbar = (props: AppleNavbarProps) => {
   return (
     <Navbar
       expand="lg"
-      className="d-flex flex-md-column flex-row-reverse bg-body-tertiary px-3 py-0"
+      className="d-flex flex-md-column flex-row-reverse bg-body-tertiary px-3 py-0 h-100"
       data-bs-theme="dark"
     >
-      <Navbar.Brand className="me-auto p-0">
+      <Nav.Link className="text-danger fs-6 d-block d-md-none">Accedi</Nav.Link>
+      <Navbar.Brand className="me-md-auto p-0  ">
         <img
           id="musicLogo"
           alt="Apple Logo"
           src={appleMusicLogo}
           width="60"
-          className="d-inline-block m-0 ms-3 my-4"
+          className="d-inline-block m-0 ms-md-3 my-md-4 m-0 py-3 py-md-0"
           style={{ filter: 'invert(1)' }}
         />
       </Navbar.Brand>

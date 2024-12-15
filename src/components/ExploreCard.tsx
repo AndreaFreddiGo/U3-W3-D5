@@ -3,8 +3,13 @@ import { Col } from 'react-bootstrap'
 const ExploreCard = () => {
   return (
     <>
+      <Col className="col-11 flex-grow-1 mx-auto mx-md-2">
+        <div className="d-flex">
+          <p className="text-light m-0 fs-5 fw-semibold">Altro da esplorare</p>
+        </div>
+      </Col>
       <Col
-        className="col-11 col-md-3 bg-body-tertiary p-3 rounded-3 m-2 flex-grow-1"
+        className="col-11 col-md-3 bg-body-tertiary p-3 rounded-3 mx-auto mx-md-2 my-2 flex-grow-1"
         data-bs-theme="dark"
       >
         <div className="d-flex justify-content-between ">
@@ -14,7 +19,7 @@ const ExploreCard = () => {
       </Col>
 
       <Col
-        className="col-11 col-md-3 bg-body-tertiary p-3 rounded-3 m-2 flex-grow-1"
+        className="col-11 col-md-3 bg-body-tertiary p-3 rounded-3 mx-auto mx-md-2 my-2 flex-grow-1"
         data-bs-theme="dark"
       >
         <div className="d-flex justify-content-between ">
@@ -23,7 +28,7 @@ const ExploreCard = () => {
         </div>
       </Col>
       <Col
-        className="col-11 col-md-3 bg-body-tertiary p-3 rounded-3 m-2 flex-grow-1"
+        className="col-11 col-md-3 bg-body-tertiary p-3 rounded-3 mx-auto mx-md-2 my-2 flex-grow-1"
         data-bs-theme="dark"
       >
         <div className="d-flex justify-content-between ">
@@ -32,7 +37,7 @@ const ExploreCard = () => {
         </div>
       </Col>
       <Col
-        className="col-11 col-md-3 bg-body-tertiary p-3 rounded-3 m-2 flex-grow-1"
+        className="col-11 col-md-3 bg-body-tertiary p-3 rounded-3 mx-auto mx-md-2 my-2 flex-grow-1"
         data-bs-theme="dark"
       >
         <div className="d-flex justify-content-between ">
@@ -41,7 +46,7 @@ const ExploreCard = () => {
         </div>
       </Col>
       <Col
-        className="col-11 col-md-3 bg-body-tertiary p-3 rounded-3 m-2 flex-grow-1"
+        className="col-11 col-md-3 bg-body-tertiary p-3 rounded-3 mx-auto mx-md-2 my-2 flex-grow-1"
         data-bs-theme="dark"
       >
         <div className="d-flex justify-content-between ">
@@ -50,7 +55,7 @@ const ExploreCard = () => {
         </div>
       </Col>
       <Col
-        className="col-11 col-md-3 bg-body-tertiary p-3 rounded-3 m-2 flex-grow-1"
+        className="col-11 col-md-3 bg-body-tertiary p-3 rounded-3 mx-auto mx-md-2 my-2 flex-grow-1"
         data-bs-theme="dark"
       >
         <div className="d-flex justify-content-between ">
@@ -59,7 +64,7 @@ const ExploreCard = () => {
         </div>
       </Col>
       <Col
-        className="col-11 col-md-3 bg-body-tertiary p-3 rounded-3 m-2 flex-grow-1"
+        className="col-11 col-md-3 bg-body-tertiary p-3 rounded-3 mx-auto mx-md-2 my-2 flex-grow-1"
         data-bs-theme="dark"
       >
         <div className="d-flex justify-content-between ">
@@ -68,7 +73,7 @@ const ExploreCard = () => {
         </div>
       </Col>
       <Col
-        className="col-11 col-md-3 bg-body-tertiary p-3 rounded-3 m-2 flex-grow-1"
+        className="col-11 col-md-3 bg-body-tertiary p-3 rounded-3 mx-auto mx-md-2 my-2 flex-grow-1"
         data-bs-theme="dark"
       >
         <div className="d-flex justify-content-between ">
@@ -77,7 +82,7 @@ const ExploreCard = () => {
         </div>
       </Col>
       <Col
-        className="col-11 col-md-3 bg-body-tertiary p-3 rounded-3 m-2 flex-grow-1"
+        className="col-11 col-md-3 bg-body-tertiary p-3 rounded-3 mx-auto mx-md-2 my-2 flex-grow-1"
         data-bs-theme="dark"
       >
         <div className="d-flex justify-content-between ">
