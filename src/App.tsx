@@ -9,6 +9,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css'
 
 function App() {
   const [query, setQuery] = useState('')
+  const [search, setSearch] = useState('')
   const [arrayOfSongs, setArrayOfSongs] = useState<ISongs[]>([])
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -20,6 +21,7 @@ function App() {
       const data = await response.json()
       console.log(data.data)
       setArrayOfSongs(data.data)
+      setSearch(query)
       setQuery('')
     } catch (error) {
       console.error('Error fetching the songs:', error)
@@ -37,7 +39,7 @@ function App() {
           />
         </Col>
         <Col className="col-12 col-md-10 m-0 p-0">
-          <AppleMain songs={arrayOfSongs} />
+          <AppleMain songs={arrayOfSongs} search={search} />
         </Col>
       </Row>
     </Container>

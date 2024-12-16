@@ -22,3 +22,8 @@
 .footer {
   font-size: x-small;
 }
+
+.radioCardTitle,
+.queryCard {
+  font-size: small !important;
+}
